@@ -4,7 +4,6 @@
 	"description": "Joi Schema Library for AFS Data Models",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"private": true,
 	"scripts": {
 		"build": "tsc",
 		"lint": "eslint .",
@@ -28,7 +27,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Naternelson/afs-schemas"
+		"url": "git+https://github.com/Naternelson/afs-schemas.git"
 	},
 	"homepage": "https://github.com/Naternelson/afs-schemas#readme",
 	"dependencies": {
