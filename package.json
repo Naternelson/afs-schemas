@@ -1,15 +1,19 @@
 {
-	"name": "afs-schemas",
+	"name": "@naternelson/afs-schemas",
 	"version": "1.0.0",
 	"description": "Joi Schema Library for AFS Data Models",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"private": true,
 	"scripts": {
 		"build": "tsc",
 		"lint": "eslint .",
 		"test": "jest --passWithNoTests",
 		"prepublishOnly": "npm run build && npm test",
 		"semantic-release": "semantic-release"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
 	},
 	"files": [
 		"dist/**/*"
