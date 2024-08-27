@@ -8,22 +8,36 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: '16.x'  # Specify your Node.js version
+          cache: 'npm'  # Cache npm modules
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      - name: Lint the code
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build the project
         run: npm run build
+
+      - name: Configure npm for authentication
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Publish to npm
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Clean up npm authentication
+        run: rm ~/.npmrc
