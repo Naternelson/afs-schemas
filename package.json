@@ -28,7 +28,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Naternelson/afs-schemas"
+		"url": "git+https://github.com/Naternelson/afs-schemas"
 	},
 	"homepage": "https://github.com/Naternelson/afs-schemas#readme",
 	"dependencies": {
