@@ -20,7 +20,7 @@ jobs:
           cache: 'npm'  # Cache npm modules
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Lint the code
         run: npm run lint
