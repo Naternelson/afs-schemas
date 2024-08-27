@@ -5,12 +5,12 @@
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
-    "build": "tsc",  
-    "lint": "eslint .",  
-    "test": "jest",  
-    "prepublishOnly": "npm run build && npm test", 
-    "semantic-release": "semantic-release"
-  },
+		"build": "tsc",
+		"lint": "eslint .",
+		"test": "jest",
+		"prepublishOnly": "npm run build && npm test",
+		"semantic-release": "semantic-release"
+	},
 	"files": [
 		"dist/**/*"
 	],
@@ -26,12 +26,14 @@
 		"type": "git",
 		"url": "https://github.com/Naternelson/afs-schemas"
 	},
-  "homepage": "https://github.com/Naternelson/afs-schemas#readme",
+	"homepage": "https://github.com/Naternelson/afs-schemas#readme",
 	"dependencies": {
 		"joi": "^17.13.3",
 		"typescript": "^5.5.4"
 	},
 	"devDependencies": {
+		"@eslint/eslintrc": "^3.1.0",
+		"@eslint/js": "^9.9.1",
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
 		"@semantic-release/github": "^10.1.7",
@@ -41,6 +43,7 @@
 		"@typescript-eslint/eslint-plugin": "^8.3.0",
 		"@typescript-eslint/parser": "^8.3.0",
 		"eslint": "^9.9.1",
+		"globals": "^15.9.0",
 		"husky": "^9.1.5",
 		"jest": "^29.7.0",
 		"lint-staged": "^15.2.9",
