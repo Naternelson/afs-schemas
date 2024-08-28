@@ -1,4 +1,4 @@
-import Joi from "joi";
+import Joi from 'joi';
 
 export const phoneSchema = Joi.object({
 	phone: Joi.string()
@@ -10,6 +10,7 @@ export const phoneSchema = Joi.object({
 			'string.pattern.base': 'Phone number must be in E.164 format',
 			'any.required': 'Phone number is required',
 		}),
+	/** Country code of the phone number */
 	countryCode: Joi.string()
 		.pattern(/^[0-9]{1,4}$/)
 		.required()
