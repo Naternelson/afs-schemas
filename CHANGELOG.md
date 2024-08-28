@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/Naternelson/afs-schemas/compare/v1.4.0...v1.4.1) (2024-08-28)
+
+
+### Bug Fixes
+
+* Comment for the Country Code ([a0c0136](https://github.com/Naternelson/afs-schemas/commit/a0c013633823442e48c2c0023693171eabebab7e))
+
 # [1.4.0](https://github.com/Naternelson/afs-schemas/compare/v1.3.0...v1.4.0) (2024-08-28)
 
 
