@@ -30,4 +30,4 @@ jobs:
       run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
     - name: Check and Publish
-      run: npm run publish 
+      run: npm publish 
