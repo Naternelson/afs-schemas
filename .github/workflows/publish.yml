@@ -35,10 +35,8 @@ jobs:
 
     - name: Prepare npm authentication
       run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-    - name: Log
-      run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}"
 
-    - name: Release with semantic-release 
+    - name: Release with semantic-release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
