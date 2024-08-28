@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Naternelson/afs-schemas/compare/v1.2.0...v1.3.0) (2024-08-28)
+
+
+### Features
+
+* Update package.json name to "afs-schemas" ([6a5020d](https://github.com/Naternelson/afs-schemas/commit/6a5020dd9992d7d19be3549851ac925797a0d485))
+
 # [1.2.0](https://github.com/Naternelson/afs-schemas/compare/v1.1.0...v1.2.0) (2024-08-28)
 
 
