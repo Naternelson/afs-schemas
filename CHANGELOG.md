@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Naternelson/afs-schemas/compare/v1.1.0...v1.2.0) (2024-08-28)
+
+
+### Features
+
+* Add example schema validation ([04c55f9](https://github.com/Naternelson/afs-schemas/commit/04c55f925ce0a45b708e9b8705eb311d92d07552))
+
 # [1.1.0](https://github.com/Naternelson/afs-schemas/compare/v1.0.0...v1.1.0) (2024-08-28)
 
 
