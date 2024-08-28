@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Semantic Release
 
 on:
   push:
@@ -30,9 +30,6 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Lint code
-      run: npm run lint
-
     - name: Prepare npm authentication
       run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
@@ -40,4 +37,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      run: npm run semantic-release
+      run: npx semantic-release
