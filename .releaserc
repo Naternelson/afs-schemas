@@ -1,6 +1,10 @@
 {
 	"branches": [
-		"main"
+		"main",
+    {
+      "name": "develop",
+      "prerelease": true
+    }
 	],
 	"repositoryUrl": "https://github.com/Naternelson/afs-schemas.git",
 	"plugins": [
