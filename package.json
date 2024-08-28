@@ -1,5 +1,5 @@
 {
-	"name": "afs-schemas",
+	"name": "@naternelson/afs-schemas",
 	"version": "1.0.0",
 	"description": "Joi Schema Library for AFS Data Models",
 	"main": "dist/index.js",
