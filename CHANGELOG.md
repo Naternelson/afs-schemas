@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Naternelson/afs-schemas/compare/v1.3.0...v1.4.0) (2024-08-28)
+
+
+### Features
+
+* Add utility module to index.ts ([33d8c9a](https://github.com/Naternelson/afs-schemas/commit/33d8c9a078bdc610700dddd11eb150d1453c6336))
+
 # [1.3.0](https://github.com/Naternelson/afs-schemas/compare/v1.2.0...v1.3.0) (2024-08-28)
 
 
